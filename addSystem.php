@@ -1,5 +1,5 @@
 <?php
-define("CONF_DIR", "D:\code\spacewalk-tools");
+define("CONF_DIR", "/app/scripts/spacewalk_conf");
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ define("CONF_DIR", "D:\code\spacewalk-tools");
     
     $files = array();
     foreach (scandir(CONF_DIR) as $file){
-      preg_match('/.*server_(int|rect|vabf|iso|prod|dev).conf/', $file, $matches);
+      preg_match('/.*server_(int|rect|vabf|iso|prod|dev).conf$/', $file, $matches);
       if(empty($matches) == FALSE)array_push($files, $matches[0]);
     }
 

@@ -49,11 +49,6 @@ $("#network-number").change(function(){
 	updateNetworkNumbers($(this).val());
 });
 
-$("#conf-file-selector").change(function(){
-	alert($(this).val());
-});
-
-
 $("#form-main").submit(function( event ) {
 
 	// Stop form from submitting normally

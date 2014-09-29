@@ -1,6 +1,6 @@
 <?php 
 
-	define("CONF_DIR", "D:\code\spacewalk-tools");
+	define("CONF_DIR", "/app/scripts/spacewalk_conf");
 	//first things first:
 	header("HTTP/1.1 500 Internal Server Error", true, 500);
 
